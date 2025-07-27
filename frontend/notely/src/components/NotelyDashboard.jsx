@@ -35,7 +35,7 @@ export default function NotelyDashboard() {
     const token = localStorage.getItem('token'); // Get the JWT token
 
     try {
-      const response = await fetch('http://localhost:5000/api/notes', {
+      const response = await fetch('https://notely-backend-api.onrender.com//api/notes', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,  // Attach token here
@@ -141,7 +141,7 @@ export default function NotelyDashboard() {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/notes', {
+      const response = await fetch('https://notely-backend-api.onrender.com//api/notes', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -189,7 +189,7 @@ export default function NotelyDashboard() {
     };
 
     try {
-      const response = await fetch(`http://localhost:5000/api/notes/${editingNote.id}`, {
+      const response = await fetch(`https://notely-backend-api.onrender.com//api/notes/${editingNote.id}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -223,7 +223,7 @@ export default function NotelyDashboard() {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await fetch(`http://localhost:5000/api/notes/${id}`, {
+      const response = await fetch(`https://notely-backend-api.onrender.com//api/notes/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -253,7 +253,7 @@ export default function NotelyDashboard() {
     const updatedPinStatus = !noteToUpdate.pinned;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/notes/${id}`, {
+      const response = await fetch(`https://notely-backend-api.onrender.com//api/notes/${id}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
