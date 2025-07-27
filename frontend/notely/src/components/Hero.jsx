@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 
-import Img1 from '../assets/IMG1.png'
+import Img1 from '../assets/IMG1.png';
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
