@@ -2,9 +2,17 @@ from flask import Flask, request, jsonify
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 from flask_cors import CORS
 import bcrypt
-from datetime import datetime
+from datetime import datetime, timedelta
 from config import Config
 from models import db, User, Note, Tag, note_tags
+from dotenv import load_dotenv
+from flask_sqlalchemy import SQLAlchemy
+
+load_dotenv()
+
+# db = SQLAlchemy()
+
+
 
 app = Flask(__name__)
 app.config.from_object(Config)

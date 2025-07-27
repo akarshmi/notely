@@ -61,7 +61,7 @@ coverage.xml
 
 # dotenv
 .env
-.env.*
+
 
 # VSCode settings
 .vscode/
