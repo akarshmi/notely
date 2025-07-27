@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Logo from "../Assets/Logoo.png";
+import Logo from "../Assets/Logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
