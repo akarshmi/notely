@@ -2,7 +2,7 @@ import React from 'react';
 // import Sidebar from '../components/Sidebar';
 // import RichTextEditor from '../components/RichTextEditor';
 import styled from 'styled-components'; // Ensure styled-components is imported
-import Dashboard from '../components/Dashboard';  
+// import Dashboard from '../components/Dashboard';  
 
 import NotelyDashboard from '../components/NotelyDashboard';
 
