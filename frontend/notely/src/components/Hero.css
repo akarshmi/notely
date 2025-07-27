@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media only screen and (max-width: 800px) {
+  .home-page {
+    font-size: 3.5rem !important;
+    line-height: 3.3rem !important;
+    font-weight: 500 !important;
+  }
+  .home-page-footer {
+    margin-bottom: 4.5rem !important;
+  }
+
+  .home-page > div > span {
+    line-height: 65px !important;
+  }
+}
+
+.home-page-container {
+  /* min-height: 100vh; */
+  width: 100%;
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-page-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* flex-direction: column; */
+  margin-left: 1.7rem;
+  font-size: 4.75rem;
+  font-weight: 500;
+  position: relative;
+  line-height: 80px;
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.home-left {
+  margin: auto;
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.home-left p {
+ 
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 3.45rem;}
+
+.home-left > div > p > span {
+  cursor: pointer;
+  color: #3B1E54;
+}
+
+.home-left > div > span {
+  line-height: 3rem;
+}
+
+.home-left > span > p {
+  font-size: 5rem;
+  font-weight: 200;
+  line-height: 3.2rem;
+  color: #191918;
+}
+
+.home-left #welcome {
+  color: #0300b1;
+  font-size: 8.8rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  line-height: 8rem;
+}
+
+
+.home-right {
+  margin: auto;
+  width: 50%;
+}
+.home-right h1{
+  color: #191918;
+  
+}
+.home-right img{
+
+  height: 85vh;
+
+}
+
+.gradient-text {
+  font-size: 5rem;
+  font-weight: 700;
+  background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf, #ff0080);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

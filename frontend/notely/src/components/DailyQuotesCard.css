@@ -1,0 +1,62 @@
+/* DailyQuotesCard.css */
+
+.daily-quotes-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-content {
+    background: linear-gradient(270deg, #ff99cc, #a3b9ff, #c1c8e4, #ff99cc);
+    background-size: 600% 600%;
+    border-radius: 0.5rem;
+    animation: dYICda 10s ease infinite;
+    padding: 15px;
+  }
+  
+  .card-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+  
+  .marquee-container {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+  }
+  
+  .quote-item {
+    padding: 0 32px;
+    flex-shrink: 0;
+    color: #9f0000;;
+  }
+  
+  .quote-text {
+    font-weight: 500;
+  }
+  
+  .quote-author {
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
