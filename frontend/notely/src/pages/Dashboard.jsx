@@ -12,7 +12,6 @@ function View() {
     <StyledWrapper>
       <div className="viewPage">
           <NotelyDashboard />;
-          {/* <Dashboard /> */}
       </div>
     </StyledWrapper>
   );
@@ -25,7 +24,5 @@ const StyledWrapper = styled.div`
     height: 100vh; 
   }
 
- 
 `;
-
 export default View;
