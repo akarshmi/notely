@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.home-page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-page-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1.7rem;
+  margin-right: 1.7rem;
+  font-size: 4.75rem;
+  font-weight: 500;
+  position: relative;
+  line-height: 80px;
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.home-left {
+  margin: auto;
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.home-left p {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 3.45rem;
+}
+
+.home-left>div>p>span {
+  cursor: pointer;
+  color: #3B1E54;
+}
+
+.home-left>div>span {
+  line-height: 3rem;
+}
+
+.home-left>span>p {
+  font-size: 5rem;
+  font-weight: 200;
+  line-height: 3.2rem;
+  color: #191918;
+}
+
+.home-left #welcome {
+  color: #0300b1;
+  font-size: 8.8rem;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  line-height: 8rem;
+}
+
+.home-right {
+  margin: auto;
+  width: 50%;
+}
+
+.home-right h1 {
+  color: #191918;
+}
+
+.home-right img {
+  height: 85vh;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.gradient-text {
+  font-size: 5rem;
+  font-weight: 700;
+  background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf, #ff0080);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Tablet and smaller laptops */
+@media only screen and (max-width: 1200px) {
+  .home-left #welcome {
+    font-size: 6.5rem;
+    line-height: 6rem;
+  }
+
+  .home-left>span>p {
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+  }
+
+  .gradient-text {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+  }
+
+  .home-left p {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .home-right img {
+    height: 70vh;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 992px) {
+  .home-page {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+  }
+
+  .home-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .home-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-left #welcome {
+    font-size: 5.5rem;
+    line-height: 5rem;
+  }
+
+  .home-left>span>p {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .gradient-text {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+
+  .home-right img {
+    height: 60vh;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  .home-page {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .home-left #welcome {
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+
+  .home-left>span>p {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .gradient-text {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .home-left p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .home-right img {
+    height: 50vh;
+  }
+}
+
+/* Small mobile devices */
+@media only screen and (max-width: 480px) {
+  .home-page {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .home-left #welcome {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+
+  .home-left>span>p {
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .gradient-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .home-left p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .home-right img {
+    height: 40vh;
+  }
+
+  .home-page-header {
+    height: 40px;
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 360px) {
+  .home-left #welcome {
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+  }
+
+  .gradient-text {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+
+  .home-right img {
+    height: 35vh;
+  }
+}

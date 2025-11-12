@@ -1,0 +1,182 @@
+/* DailyQuotesCard.css */
+
+.daily-quotes-card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  background: linear-gradient(270deg, #ff99cc, #a3b9ff, #c1c8e4, #ff99cc);
+  background-size: 600% 600%;
+  border-radius: 0.5rem;
+  animation: dYICda 10s ease infinite;
+  padding: 20px;
+}
+
+@keyframes dYICda {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 60s linear infinite;
+}
+
+.quote-item {
+  padding: 0 32px;
+  flex-shrink: 0;
+  color: #9f0000;
+  font-size: 1rem;
+}
+
+.quote-text {
+  font-weight: 500;
+}
+
+.quote-author {
+  font-weight: 300;
+  font-style: italic;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 1024px) {
+  .card-content {
+    padding: 18px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+
+  .quote-item {
+    padding: 0 24px;
+    font-size: 0.95rem;
+  }
+
+  .marquee-container {
+    padding: 14px 0;
+  }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 768px) {
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .quote-item {
+    padding: 0 20px;
+    font-size: 0.9rem;
+  }
+
+  .marquee-container {
+    padding: 12px 0;
+  }
+
+  .marquee-content {
+    animation: marquee 45s linear infinite;
+  }
+}
+
+/* Small mobile screens */
+@media only screen and (max-width: 480px) {
+  .daily-quotes-card {
+    border-radius: 8px;
+  }
+
+  .card-content {
+    padding: 12px;
+    border-radius: 0.4rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .quote-item {
+    padding: 0 16px;
+    font-size: 0.85rem;
+  }
+
+  .marquee-container {
+    padding: 10px 0;
+    border-radius: 6px;
+  }
+
+  .marquee-content {
+    animation: marquee 35s linear infinite;
+  }
+}
+
+/* Extra small screens */
+@media only screen and (max-width: 360px) {
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .quote-item {
+    padding: 0 12px;
+    font-size: 0.8rem;
+  }
+
+  .marquee-container {
+    padding: 8px 0;
+  }
+}
